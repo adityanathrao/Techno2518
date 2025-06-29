@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TechnoSpark Newsroom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header span {
+      color: #ff2a2a;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: #d62828;
+      padding: 3rem 2rem;
+      text-align: center;
+      border-radius: 0 0 30px 30px;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      font-weight: 400;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .story {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.07);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .story h3 {
+      color: #cc3300;
+      font-size: 1.1rem;
+      margin: 0.75rem 0;
+    }
+
+    .image-container {
+      text-align: center;
+    }
+
+    .story img {
+      max-width: 100%;
+      max-height: 250px;
+      width: auto;
+      height: auto;
+      border-radius: 8px;
+      object-fit: contain;
+      display: inline-block;
+    }
+
+    .story a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .red-link {
+      color: #cc0000 !important;
+    }
+
+    .story p {
+      flex-grow: 1;
+      margin-top: 0.5rem;
+      color: #444;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .footer {
+      background: #e6ecf5;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-top: 1px solid #ccc;
+      margin-top: 2rem;
+    }
+
+    .footer p {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Technospark <span>Newsroom</span></h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Stories</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Inside the Technospark Newsroom</h2>
+    <p>Your front-row seat to the latest, the boldest, and the quirkiest stories powering the digital age.</p>
+  </section>
+
+  <div class="content">
+    <div class="story">
+      <div class="image-container">
+        <img src="https://spaceaustralia.com.au/cdn/shop/articles/lost-tomato-in-space.jpg?v=1702253598" alt="Tomatoes in Space">
+      </div>
+      <h3><a href="https://www.space.com/astronauts-grow-tomatoes-in-space" target="_blank" class="red-link">Tomatoes in Space Plot to Hijack Earth?</a></h3>
+      <p>Glowing tomatoes floating in zero-G might be smarter than we thought. Latin whispering included.</p>
+    </div>
+
+    <div class="story">
+      <div class="image-container">
+        <img src="https://static01.nyt.com/images/2024/06/16/magazine/16mag-parkinnson/16mag-parkinnson-superJumbo.jpg?quality=75&auto=webp" alt="Smelling Parkinson's">
+      </div>
+      <h3><a href="https://www.bbc.com/news/health-56190970" target="_blank" class="red-link">Woman Can Smell Parkinson’s—Before It Exists</a></h3>
+      <p>Superpowered nose disrupts medical science. Doctors and perfumers are equally stunned.</p>
+    </div>
+
+    <div class="story">
+      <div class="image-container">
+        <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*32nXJ_xosWohsKt3HExCYQ.png" alt="AI Smart Fridge">
+      </div>
+      <h3>AI Smart Fridge Shames Users at 2AM</h3>
+      <p>IceByte’s new model flashes “Really?” every time you grab ice cream at night.</p>
+    </div>
+
+    <div class="story">
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=60" alt="VR penguins">
+      </div>
+      <h3>Penguins Trained to Use VR in Antarctica</h3>
+      <p>Some refuse to leave their virtual fishing grounds. Is the Matrix real?</p>
+    </div>
+
+    <div class="story">
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" alt="Ocean sounds">
+      </div>
+      <h3>Ocean Sounds Boost Math Scores by 15%</h3>
+      <p>Whale music might be the new exam strategy.</p>
+    </div>
+
+    <div class="story">
+      <div class="image-container">
+        <img src="https://japannews.yomiuri.co.jp/wp-content/uploads/2022/06/9751833.jpg" alt="Pet leave policy Japan">
+      </div>
+      <h3>Japan Approves Paid Leave for Employees Mourning the Death of a Pet Cat or Dog</h3>
+      <p>Cited as boosting productivity and emotional well-being.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p><strong>About TechnoSpark Newsroom</strong></p>
+    <p>We believe in the power of curious journalism—stories that inspire, confuse, and keep you guessing what's real.</p>
+    <p>© 2025 TechnoSpark Newsroom. All rights reserved.</p>
+  </footer>
+</body>
+</html>
